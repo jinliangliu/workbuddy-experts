@@ -1,0 +1,126 @@
+{
+  "name": "mcp-dev-assistant",
+  "version": "1.0.0",
+  "description": "A four-role MCP development assistant team covering bridge selection, Server wrapping, Client integration, and protocol-level debugging.",
+  "author": {
+    "name": "workbuddy-experts contributors",
+    "email": "jinliangliu@users.noreply.github.com"
+  },
+  "agents": [
+    "./agents/mcp-dev-assistant-team-lead.md",
+    "./agents/mcp-client-dev.md",
+    "./agents/mcp-server-dev.md",
+    "./agents/mcp-protocol-debug.md"
+  ],
+  "expertType": "team",
+  "agentName": "mcp-dev-assistant-team-lead",
+  "teamInfo": {
+    "leadAgent": "mcp-dev-assistant-team-lead",
+    "memberAgents": [
+      "mcp-client-dev",
+      "mcp-server-dev",
+      "mcp-protocol-debug"
+    ]
+  },
+  "displayName": {
+    "en": "MCP Development Assistant",
+    "zh": "MCP开发助手"
+  },
+  "profession": {
+    "en": "MCP Development Assistant",
+    "zh": "MCP开发助手"
+  },
+  "displayDescription": {
+    "en": "Covers MCP bridge selection, Server wrapping, Client integration and end-to-end debugging, delivering runnable code and security constraint checklists.",
+    "zh": "定选型、封装 Server、接入 Client、联调排障，输出可运行代码与安全约束清单。"
+  },
+  "avatar": "avatars/mcp-dev-assistant.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "我的 MCP Client 连不上 SSE Server，帮我判断问题在哪一侧",
+    "en": "My MCP client cannot connect to an SSE server. Help me determine which side is at fault."
+  },
+  "plugin": "mcp-dev-assistant",
+  "tags": [
+    {
+      "en": "MCP Selection & Bridging",
+      "zh": "MCP 选型与桥接"
+    },
+    {
+      "en": "Client & Server SDK",
+      "zh": "Client/Server 开发"
+    },
+    {
+      "en": "Debugging & Diagnostics",
+      "zh": "协议调试排障"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "My MCP client cannot connect to an SSE server. Help me determine which side is at fault.",
+      "zh": "我的 MCP Client 连不上 SSE Server，帮我判断问题在哪一侧"
+    },
+    {
+      "en": "Build an MCP server tool with the TypeScript SDK, including parameter validation and error handling.",
+      "zh": "用 TypeScript SDK 写一个带参数校验和错误处理的 MCP Server 工具"
+    },
+    {
+      "en": "Streamable HTTP versus SSE: which transport should I choose, and what are the deployment implications?",
+      "zh": "Streamable HTTP 和 SSE 该怎么选？给我选型依据和部署注意事项"
+    }
+  ],
+  "members": [
+    {
+      "id": "mcp-dev-assistant-team-lead",
+      "name": {
+        "en": "Emmet Ward",
+        "zh": "Emmet Ward"
+      },
+      "profession": {
+        "en": "MCP Architecture Coordinator",
+        "zh": "MCP 架构协调者"
+      },
+      "avatar": "avatars/mcp-dev-assistant-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "mcp-client-dev",
+      "name": {
+        "en": "Anton Bridges",
+        "zh": "Anton Bridges"
+      },
+      "profession": {
+        "en": "MCP Client Engineer",
+        "zh": "MCP Client 开发专家"
+      },
+      "avatar": "avatars/mcp-client-dev.png",
+      "role": "member"
+    },
+    {
+      "id": "mcp-server-dev",
+      "name": {
+        "en": "Forman Steele",
+        "zh": "Forman Steele"
+      },
+      "profession": {
+        "en": "MCP Server Engineer",
+        "zh": "MCP Server 开发专家"
+      },
+      "avatar": "avatars/mcp-server-dev.png",
+      "role": "member"
+    },
+    {
+      "id": "mcp-protocol-debug",
+      "name": {
+        "en": "Anthea Tracey",
+        "zh": "Anthea Tracey"
+      },
+      "profession": {
+        "en": "MCP Protocol & Debugging Specialist",
+        "zh": "MCP 协议与调试专家"
+      },
+      "avatar": "avatars/mcp-protocol-debug.png",
+      "role": "member"
+    }
+  ]
+}

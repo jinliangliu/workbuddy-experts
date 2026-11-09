@@ -1,0 +1,132 @@
+{
+  "name": "stm32-fw-codegen",
+  "version": "1.3.0",
+  "description": "STM32 embedded firmware code generation team: from schematic/netlist to compilable FreeRTOS projects, with driver templates, RTOS architecture, safety review and on-board verification.",
+  "author": {
+    "name": "jinliang.liu",
+    "email": "jinliangliu@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "homepage": {
+    "url": "https://github.com/jinliangliu/hw2c",
+    "type": "repo"
+  },
+  "keywords": [
+    "stm32",
+    "embedded",
+    "firmware",
+    "freertos",
+    "code-generation",
+    "jinja2",
+    "mcu",
+    "misra-c"
+  ],
+  "agents": [
+    "./agents/stm32-fw-codegen-team-lead.md",
+    "./agents/hw-schematic-analyst.md",
+    "./agents/fw-template-engineer.md",
+    "./agents/rtos-architect.md",
+    "./agents/fw-safety-reviewer.md",
+    "./agents/build-ota-verifier.md"
+  ],
+  "skills": [
+    "./skills/ub-mode",
+    "./skills/fw-lessons"
+  ],
+
+  "expertType": "team",
+  "agentName": "stm32-fw-codegen-team-lead",
+  "teamInfo": {
+    "leadAgent": "stm32-fw-codegen-team-lead",
+    "memberAgents": [
+      "hw-schematic-analyst",
+      "fw-template-engineer",
+      "rtos-architect",
+      "fw-safety-reviewer",
+      "build-ota-verifier"
+    ]
+  },
+
+  "displayName": {
+    "en": "STM32 Firmware Codegen Team",
+    "zh": "STM32 固件代码生成专家团"
+  },
+  "profession": {
+    "en": "STM32 Firmware Codegen Team",
+    "zh": "STM32 固件代码生成专家团"
+  },
+  "displayDescription": {
+    "en": "Turns schematics and netlists into compilable STM32 + FreeRTOS firmware: peripheral models, Jinja2 driver templates, RTOS/state-machine architecture, MISRA-C safety review and on-board OTA verification.",
+    "zh": "从原理图生成可编译 STM32+FreeRTOS 固件：驱动模板、RTOS 架构、安全审查与上板验证"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "02-Engineering",
+  "defaultInitPrompt": {
+    "zh": "我有一个 STM32 板子（附原理图/网表），帮我生成一版可编译的 FreeRTOS 固件工程骨架，并把引脚、外设和任务都配置好。",
+    "en": "I have an STM32 board (schematic/netlist attached). Generate a compilable FreeRTOS firmware project skeleton with pins, peripherals and tasks configured."
+  },
+  "plugin": "stm32-fw-codegen",
+  "tags": [
+    { "en": "Firmware Code Generation", "zh": "固件代码生成" },
+    { "en": "STM32 + FreeRTOS", "zh": "STM32 与 FreeRTOS" },
+    { "en": "Embedded Safety Review", "zh": "嵌入式安全审查" }
+  ],
+  "quickPrompts": [
+    {
+      "zh": "我有一个 STM32 板子（附原理图/网表），帮我生成一版可编译的 FreeRTOS 固件工程骨架，并把引脚、外设和任务都配置好。",
+      "en": "I have an STM32 board (schematic/netlist attached). Generate a compilable FreeRTOS firmware project skeleton with pins, peripherals and tasks configured."
+    },
+    {
+      "zh": "帮我为一块新的 SPI Flash（或 IMU、温压传感器）写一套驱动模板 + 器件模型 + 主机侧单元测试，接入代码生成管线。",
+      "en": "Write a full driver template set (model YAML + C template + host unit test) for a new SPI flash / IMU / pressure sensor and wire it into the code generation pipeline."
+    },
+    {
+      "zh": "审查这份生成的固件源码：RTOS 任务划分、ISR 共享数据、中断标志清除、失效安全路径与 MISRA C:2012 合规性。",
+      "en": "Review this generated firmware source: RTOS task partitioning, ISR shared data, interrupt flag clearing, fail-safe paths and MISRA C:2012 compliance."
+    }
+  ],
+  "members": [
+    {
+      "id": "stm32-fw-codegen-team-lead",
+      "name": { "en": "Eva", "zh": "Eva" },
+      "profession": { "en": "Firmware Project Lead", "zh": "固件项目主理人" },
+      "avatar": "avatars/stm32-fw-codegen-team-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "hw-schematic-analyst",
+      "name": { "en": "Wen", "zh": "文工" },
+      "profession": { "en": "Hardware & Netlist Analyst", "zh": "硬件与网表分析师" },
+      "avatar": "avatars/hw-schematic-analyst.png",
+      "role": "member"
+    },
+    {
+      "id": "fw-template-engineer",
+      "name": { "en": "Templar", "zh": "模板匠" },
+      "profession": { "en": "Firmware Template Engineer", "zh": "固件模板工程师" },
+      "avatar": "avatars/fw-template-engineer.png",
+      "role": "member"
+    },
+    {
+      "id": "rtos-architect",
+      "name": { "en": "Kai", "zh": "凯" },
+      "profession": { "en": "RTOS & State Machine Architect", "zh": "RTOS 与状态机架构师" },
+      "avatar": "avatars/rtos-architect.png",
+      "role": "member"
+    },
+    {
+      "id": "fw-safety-reviewer",
+      "name": { "en": "Vera", "zh": "薇拉" },
+      "profession": { "en": "Embedded Safety & MISRA-C Reviewer", "zh": "嵌入式安全与 MISRA-C 审查员" },
+      "avatar": "avatars/fw-safety-reviewer.png",
+      "role": "member"
+    },
+    {
+      "id": "build-ota-verifier",
+      "name": { "en": "Bo", "zh": "博" },
+      "profession": { "en": "Build, Flash & OTA Verification Engineer", "zh": "构建烧录与 OTA 验证工程师" },
+      "avatar": "avatars/build-ota-verifier.png",
+      "role": "member"
+    }
+  ]
+}

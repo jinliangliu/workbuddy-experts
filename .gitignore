@@ -1,0 +1,29 @@
+# 运行时 / 打包产物
+dist/
+*.zip
+*.tar.gz
+
+# WorkBuddy 会话与预览状态（本机生成，不入库）
+.created-by-session
+.pending-preview-session
+
+# Python
+__pycache__/
+*.pyc
+
+# 系统垃圾
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 凭据 / 本机密钥（防止误提交）
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.netrc
+.credentials
+*_token.txt
