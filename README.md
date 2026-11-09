@@ -7,7 +7,7 @@ WorkBuddy 专家包（Expert / Expert Team）开源集合。仓库本身就是�
 | 包名 | 名称 | 类型 | 分类 | 版本 |
 |---|---|---|---|---|
 | [`mcp-dev-assistant`](plugins/mcp-dev-assistant) | MCP开发助手 | Team（4 角色） | 技术工程 | 1.0.0 |
-| [`stm32-fw-codegen`](plugins/stm32-fw-codegen) | STM32 固件代码生成专家团 | Team（6 角色） | 技术工程 | 1.3.0 |
+| [`stm32-fw-codegen`](plugins/stm32-fw-codegen) | STM32 固件代码生成专家团 | Team（6 角色） | 技术工程 | 1.4.0 |
 
 ### mcp-dev-assistant · MCP开发助手
 
